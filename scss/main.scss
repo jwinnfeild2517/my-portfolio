@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -23,7 +24,7 @@ h3 {
   color: #fff;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   &.sm-heading {
@@ -34,8 +35,8 @@ h3 {
 }
 
 a {
-  color: #89da59;
   text-decoration: none;
+  color: $secondary-color;
 }
 
 header {

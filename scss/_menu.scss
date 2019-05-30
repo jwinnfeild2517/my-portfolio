@@ -93,11 +93,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300px;
-    color: white;
+    color: $secondary-color;
     @include ease-out;
 
     &:hover {
-      color: $secondary-color;
+      color: white;
     }
   }
 }
