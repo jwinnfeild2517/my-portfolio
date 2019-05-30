@@ -1,17 +1,12 @@
-$primary-color: yellow;
-$secondary-color: blue;
-
-@mixin ease-out {
-  transition: all 0.5s ease-out;
-}
+@import "config";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: $primary-color;
-  color: red;
+  @include background();
+  //   color: red;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -23,7 +18,8 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
+  color: #ff420e;
 
   &.lg-heading {
     font-size: 6rem;
@@ -37,7 +33,7 @@ h3 {
 }
 
 a {
-  color: purple;
+  color: #89da59;
   text-decoration: none;
 }
 
