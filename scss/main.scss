@@ -189,6 +189,30 @@ main {
   color: black;
 }
 
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 2px $secondary-color solid;
+    margin-top: 3rem;
+    @include ease-out;
+
+    &:hover {
+      background: $secondary-color;
+      color: white;
+
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
