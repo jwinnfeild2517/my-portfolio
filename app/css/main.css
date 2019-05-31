@@ -213,6 +213,23 @@ main {
   background: white;
   color: black; }
 
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 1rem; }
+  .contact-info div {
+    font-size: 2rem;
+    border: 2px #89da59 solid;
+    margin-top: 3rem;
+    transition: all 0.5s ease-out; }
+    .contact-info div:hover {
+      background: #89da59;
+      color: white; }
+      .contact-info div:hover span {
+        color: #999999; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
