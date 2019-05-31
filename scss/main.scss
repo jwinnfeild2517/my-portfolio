@@ -76,7 +76,7 @@ main {
 }
 
 .about {
-  background: #c3c3c3;
+  background: #6b6b6b;
 }
 
 .about-info {
@@ -99,16 +99,38 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.3rem;
+
+    p {
+      color: aliceblue;
+    }
   }
 
   .job-1 {
     grid-area: job1;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    p {
+      color: white;
+    }
+
+    h3 {
+      color: $secondary-color;
+      text-decoration: underline;
+      font-weight: bold;
+    }
   }
 
   .job-2 {
     grid-area: job2;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    p {
+      color: white;
+    }
+
+    h3 {
+      color: $secondary-color;
+      text-decoration: underline;
+      font-weight: bold;
+    }
   }
 
   .job {
@@ -116,6 +138,55 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+// projects page
+
+.projects-body {
+  background: #6b6b6b;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px white solid;
+    width: 370px;
+    height: 250px;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include ease-out;
+    }
+  }
+}
+
+// project buttons
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: white;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($color: $primary-color, $amount: 50);
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: black;
 }
 
 #main-footer {
