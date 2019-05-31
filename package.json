@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "My portfolio",
   "main": "index.js",
+  "homepage": "https://jwinnfeild2517.github.io/my_portfolio ",
   "scripts": {
-    "sass": "node-sass -w scss/ -o app/css/ --recursive"
+    "sass": "node-sass -w scss/ -o app/css/ --recursive",
+    "deploy": "gh-pages -d app"
   },
   "author": "Jenner Thomas",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
   }
 }
